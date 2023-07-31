@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import Card from 'react-bootstrap/Card';
-import { Trash, PencilSquare, ClipboardMinus, Shop } from "react-bootstrap-icons"
+import { Trash, PencilSquare, ClipboardMinus} from "react-bootstrap-icons"
 import axios from 'axios';
 import EditForm from './EditForm';
 
