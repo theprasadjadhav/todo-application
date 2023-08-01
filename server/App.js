@@ -62,7 +62,7 @@ app.delete("/tasks/:id", (req, res) => {
     }
 });
 
-const port = 3050;
+const port = process.env.PORT || 3050;
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
