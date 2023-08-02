@@ -5,7 +5,7 @@ change directory from root folder to server folder <br/>
 install necessary packages <br/>
 `npm install` <br/>
 run the server <br/>
-`node App.js` <br/>
+`node index.js` <br/>
 <br/>
 ## Run Client Side 
 change directory from root folder to client folder <br/>

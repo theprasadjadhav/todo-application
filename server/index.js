@@ -12,13 +12,13 @@ app.use(methodOverride("_method"));
 app.use(cors())
 
 app.get("/tasks", (req, res) => {
-  const filePath = path.join(__dirname, "..", "public", "tasks.json");
+  const filePath = path.join(__dirname,"public", "tasks.json");
   const tasksData = JSON.parse(fs.readFileSync(filePath));
   res.json(tasksData);
 });
 
 app.post("/tasks", (req, res) => {
-  const filePath = path.join(__dirname, ".." , "public", "tasks.json");
+  const filePath = path.join(__dirname, "public", "tasks.json");
   const tasksData = JSON.parse(fs.readFileSync(filePath));
 
   const newTask = req.body.task;
@@ -30,7 +30,7 @@ app.post("/tasks", (req, res) => {
 });
 
 app.put("/tasks/:id", (req, res) => {
-  const filePath = path.join(__dirname, ".." , "public", "tasks.json");
+  const filePath = path.join(__dirname, "public", "tasks.json");
   const tasksData = JSON.parse(fs.readFileSync(filePath));
 
   const TaskId = req.params.id;
@@ -47,7 +47,7 @@ app.put("/tasks/:id", (req, res) => {
 });
 
 app.delete("/tasks/:id", (req, res) => {
-  const filePath = path.join(__dirname, ".." , "public", "tasks.json");
+  const filePath = path.join(__dirname, "public", "tasks.json");
   const tasksData = JSON.parse(fs.readFileSync(filePath));
 
     const TaskId = req.params.id;
